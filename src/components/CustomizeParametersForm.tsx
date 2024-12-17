@@ -6,6 +6,7 @@ import React from "react";
 import FormField from "./FormField";
 import FormInput from "./FormInput";
 import FormLabel from "./FormLabel";
+import Button from "./Button";
 
 type Props = {};
 
@@ -59,7 +60,11 @@ const CustomizeParametersForm = (props: Props) => {
       </FormField>
 
       {/* Submit Button */}
-      <button type="submit">Generate Poem</button>
+      <div className="flex justify-center">
+        <Button className="bg-gradient-to-br from-purple-500 to-pink-500 m-auto">
+          Generate Poem
+        </Button>
+      </div>
     </form>
   );
 };
